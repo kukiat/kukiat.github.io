@@ -17,9 +17,66 @@
     }
 
     .container {}
+
+    .personal {
+      margin-left: 20px;
+      width: 30%;
+    }
+
+    .personal__wrapper {
+      position: relative;
+    }
+
+    .personal__text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .bullet {
+      margin-left: 14px;
+    }
+
+    .bullet::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #FFB86C;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #FFB86C;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+      color: #FFB86C;
+      cursor: pointer;
+    }
+
+    h3 {
+      width: fit-content;
+    }
   </style>
   <div class="container">
-    <h2>Coming soon...</h2>
+    <h2>Kukiat Wangtaphan</h2>
+    <div class="personal">
+      <div class="personal__wrapper">
+        <h3 class="personal__text bullet">Frontend Developer</h3>
+      </div>
+      <div class="personal__wrapper">
+        <a class="personal__text link bullet" href="resume.pdf">
+          Resume
+        </a>
+      </div>
+    </div>
   </div>
 </body>
 
